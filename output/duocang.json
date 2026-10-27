@@ -5,8 +5,24 @@
       "url": "https://0.12yue.de5.net/5/x4.json"
     },
     {
+      "name": "饭太硬",
+      "url": "https://0.wudaozhe.net/tvbox/饭太硬.json"
+    },
+    {
+      "name": "摸鱼",
+      "url": "https://0.wudaozhe.net/tvbox/摸鱼.json"
+    },
+    {
       "name": "王二小",
       "url": "https://9280.kstore.vip/aiwex.json"
+    },
+    {
+      "name": "潇洒",
+      "url": "https://0.wudaozhe.net/tvbox/潇洒.json"
+    },
+    {
+      "name": "嗷呜",
+      "url": "https://0.wudaozhe.net/tvbox/嗷呜.json"
     },
     {
       "name": "X4更新专用接口",
@@ -19,6 +35,10 @@
     {
       "name": "X4少儿频道",
       "url": "https://0.12yue.de5.net/5/tv少儿.json"
+    },
+    {
+      "name": "海量直播聚合",
+      "url": "https://0.wudaozhe.net/tvbox/%E6%B5%B7%E9%87%8F%E7%9B%B4%E6%92%AD%E8%81%9A%E5%90%88%E6%8E%A5%E5%8F%A3.json"
     }
   ]
 }
