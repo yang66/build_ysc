@@ -1,0 +1,24 @@
+{
+  "urls": [
+    {
+      "name": "X4菠菜园",
+      "url": "https://0.12yue.de5.net/5/x4.json"
+    },
+    {
+      "name": "王二小",
+      "url": "https://9280.kstore.vip/aiwex.json"
+    },
+    {
+      "name": "X4更新专用接口",
+      "url": "https://0.12yue.de5.net/0/666"
+    },
+    {
+      "name": "X4菠菜pro",
+      "url": "https://0.12yue.de5.net/5/x4pro.json"
+    },
+    {
+      "name": "X4少儿频道",
+      "url": "https://0.12yue.de5.net/5/tv少儿.json"
+    }
+  ]
+}

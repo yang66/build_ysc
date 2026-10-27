@@ -1,0 +1,64 @@
+{
+  "generated_at_utc": "2026-10-27T06:52:48.364617+00:00",
+  "vod": [
+    {
+      "name": "X4菠菜园",
+      "url": "https://0.12yue.de5.net/5/x4.json",
+      "ok": true
+    },
+    {
+      "name": "饭太硬",
+      "url": "http://www.饭太硬.net/tv",
+      "ok": false,
+      "errors": [
+        "http://www.饭太硬.net/tv: Expecting value: line 1 column 1 (char 0)"
+      ]
+    },
+    {
+      "name": "摸鱼",
+      "url": "http://我不是.摸鱼儿.top",
+      "ok": false,
+      "errors": [
+        "http://我不是.摸鱼儿.top: Expecting value: line 1 column 1 (char 0)"
+      ]
+    },
+    {
+      "name": "王二小",
+      "url": "https://9280.kstore.vip/aiwex.json",
+      "ok": true
+    },
+    {
+      "name": "潇洒",
+      "url": "https://9877.kstore.space/sun.json",
+      "ok": false,
+      "errors": [
+        "https://9877.kstore.space/sun.json: HTTP Error 403: "
+      ]
+    },
+    {
+      "name": "嗷呜",
+      "url": "http://www.英格里希嗷呜.top/tv",
+      "ok": false,
+      "errors": [
+        "http://www.英格里希嗷呜.top/tv: Expecting value: line 1 column 1 (char 0)"
+      ]
+    },
+    {
+      "name": "X4更新专用接口",
+      "url": "https://0.12yue.de5.net/0/666",
+      "ok": true
+    },
+    {
+      "name": "X4菠菜pro",
+      "url": "https://0.12yue.de5.net/5/x4pro.json",
+      "ok": true
+    },
+    {
+      "name": "X4少儿频道",
+      "url": "https://0.12yue.de5.net/5/tv少儿.json",
+      "ok": true
+    }
+  ],
+  "vod_ok_count": 5,
+  "lives": null
+}
