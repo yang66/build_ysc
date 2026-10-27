@@ -1,0 +1,81 @@
+# GitHub Actions 版:不依赖自己的服务器
+#
+# 把这个文件放进仓库的 .github/workflows/build-ysc.yml,
+# 再把 build_ysc.py 放到仓库根目录,就能全自动跑,不用 RackNerd,也不用 Caddy。
+#
+# 仓库结构(最简):
+#   build_ysc.py
+#   .github/workflows/build-ysc.yml   <- 本文件
+#   output/                           <- 由 Actions 自动生成并提交,不要手工改
+#     duocang.json
+#     lives-clean.json
+#     build-status.json
+#
+# 触发方式:
+#   * 定时:每 6 小时跑一次(cron 写的是 UTC,6 小时间隔本身不受时区影响)
+#   * 手动:仓库 Actions 页点 Run workflow,第一次建仓后先手动跑一次验证
+#   * 注意:GitHub 的定时任务在高负载时可能延迟,不是精确到分钟的闹钟;
+#     另外仓库连续 60 天没有任何活动时,定时任务会被 GitHub 暂停,
+#     到时去 Actions 页重新启用即可,手动跑一次也能恢复。
+#
+# 权限:只需要 contents:write,用来把新生成的 output/ 提交回仓库。
+#   不要在 on: 里加 push 触发,否则提交输出又会触发新一轮,虽然本文件
+#   没加 push 触发,但如果你自己改,切记不要把“提交输出”这一步和
+#   push 触发同时开,避免无限循环。
+#
+# 费用:免费账号每月 2000 分钟 Actions 额度,每 6 小时跑一次、
+#   每次 1~3 分钟,一个月约 120 次、360 分钟以内,够用。
+#
+# 输出地址(把 <user> / <repo> 换成你自己的,分支默认 main):
+#   原始直链(最及时,但国内访问 raw.githubusercontent.com 有时不稳):
+#     https://raw.githubusercontent.com/<user>/<repo>/main/output/duocang.json
+#   jsDelivr(国内一般更快,但有缓存,新提交后要等几分钟才生效):
+#     https://cdn.jsdelivr.net/gh/<user>/<repo>@main/output/duocang.json
+#   备选:在上面任一地址前套 gh-proxy,例如:
+#     https://gh-proxy.org/https://raw.githubusercontent.com/<user>/<repo>/main/output/duocang.json
+#   填进影视仓的都是上面这种直链,不要填仓库网页地址。
+#
+# 公开还是私有:
+#   必须是公开仓库,影视仓才能无 token 拉到 raw/jsDelivr 地址。
+#   输出里只有站上本来就公开的仓地址,没有你的任何密钥,所以公开没问题;
+#   但千万别把带真实节点密钥的 Clash 配置、私人订阅之类文件放进同一个仓库。
+#
+# 失败处理:
+#   * 某几个仓挂了:脚本只会把它们从本次输出去掉并记进 build-status.json,
+#     其余仓照常提交,工作流不会因此失败。
+#   * 点播仓全部校验失败:脚本返回非 0,工作流失败、不提交,旧输出原样保留,
+#     下次定时再试,这是故意设计的,不要改成“失败也提交空文件”。
+
+name: Build YSC Duocang
+
+"on":
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build duocang and lives
+        run: python3 build_ysc.py --out-dir output
+
+      - name: Commit outputs if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output
+          git diff --cached --quiet || git commit -m "chore: update ysc duocang $(date -u +%F_%T)"
+          git push
