@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-30T03:35:16.551536+00:00",
+  "generated_at_utc": "2026-10-30T11:53:04.568760+00:00",
   "vod": [
     {
       "name": "X4菠菜园",
@@ -61,8 +61,8 @@
     "aggregation_url": "https://0.wudaozhe.net/tvbox/%E6%B5%B7%E9%87%8F%E7%9B%B4%E6%92%AD%E8%81%9A%E5%90%88%E6%8E%A5%E5%8F%A3.json",
     "chosen_url": "https://0.wudaozhe.net/tvbox/%E6%B5%B7%E9%87%8F%E7%9B%B4%E6%92%AD%E8%81%9A%E5%90%88%E6%8E%A5%E5%8F%A3.json",
     "chosen_is_inferred_mirror": false,
-    "raw_count": 193,
-    "filtered_adult": 14,
-    "final_count": 179
+    "raw_count": 1,
+    "filtered_adult": 0,
+    "final_count": 2
   }
 }
