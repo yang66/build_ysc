@@ -1,18 +1,11 @@
 {
-  "generated_at_utc": "2026-11-07T12:06:54.403622+00:00",
+  "generated_at_utc": "2026-11-07T21:14:08.417697+00:00",
   "vod": [
     {
       "name": "X4菠菜园",
       "url": "https://0.12yue.de5.net/5/x4.json",
-      "ok": false,
-      "errors": [
-        "https://0.12yue.de5.net/5/x4.json: Expecting value: line 1 column 1 (char 0)",
-        "https://0.wudaozhe.net/5/x4.json: Expecting value: line 1 column 1 (char 0)",
-        "https://0.wudaozhe.net/tvbox/X4菠菜园.json: Expecting value: line 1 column 1 (char 0)",
-        "https://0.12yue.de5.net/tvbox/X4菠菜园.json: Expecting value: line 1 column 1 (char 0)",
-        "https://0.cdz.qzz.io/tvbox/X4菠菜园.json: Expecting value: line 1 column 1 (char 0)",
-        "https://0.wdzb.eu.cc/tvbox/X4菠菜园.json: Expecting value: line 1 column 1 (char 0)"
-      ]
+      "used": "original",
+      "ok": true
     },
     {
       "name": "饭太硬",
@@ -63,7 +56,7 @@
       "ok": true
     }
   ],
-  "vod_ok_count": 8,
+  "vod_ok_count": 9,
   "lives": {
     "aggregation_url": "https://0.wudaozhe.net/tvbox/%E6%B5%B7%E9%87%8F%E7%9B%B4%E6%92%AD%E8%81%9A%E5%90%88%E6%8E%A5%E5%8F%A3.json",
     "chosen_url": "https://0.wudaozhe.net/tvbox/%E6%B5%B7%E9%87%8F%E7%9B%B4%E6%92%AD%E8%81%9A%E5%90%88%E6%8E%A5%E5%8F%A3.json",
