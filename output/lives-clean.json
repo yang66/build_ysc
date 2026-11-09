@@ -337,6 +337,12 @@
       "source": "小米"
     },
     {
+      "name": "钵钵鸡(四网通用)",
+      "url": "http://hb.小虎斑.site:25252/切换成你自己的地址",
+      "ua": "",
+      "source": "小虎斑"
+    },
+    {
       "name": "咪咕",
       "url": "https://develop202.github.io/migu_video/interface.txt",
       "ua": "",
@@ -571,12 +577,6 @@
       "source": "聚玩"
     },
     {
-      "name": "Gather「果」",
-      "url": "https://tv.tmxk.kdns.fr/yplrnuc7",
-      "ua": "okhttp/3.8.1",
-      "source": "肥猫"
-    },
-    {
       "name": "👖裤佬IPTV直播",
       "url": "https://iptv.445569.xyz/live.m3u",
       "ua": "",
@@ -707,6 +707,24 @@
       "url": "https://ghproxy.net/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
       "ua": "",
       "source": "饭太硬"
+    },
+    {
+      "name": "BMCH",
+      "url": "https://play.iptv365.org/香雅情/lives/BMCH.txt",
+      "ua": "",
+      "source": "香雅情"
+    },
+    {
+      "name": "Tianmu",
+      "url": "https://play.iptv365.org/香雅情/lives/Tianmu.txt",
+      "ua": "",
+      "source": "香雅情"
+    },
+    {
+      "name": "fanmingming",
+      "url": "https://play.iptv365.org/香雅情/lives/fanmingming.txt",
+      "ua": "",
+      "source": "香雅情"
     },
     {
       "name": "本地live文件",
