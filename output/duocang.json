@@ -1,6 +1,10 @@
 {
   "urls": [
     {
+      "name": "X4菠菜园",
+      "url": "https://0.12yue.de5.net/5/x4.json"
+    },
+    {
       "name": "饭太硬",
       "url": "https://0.wudaozhe.net/tvbox/饭太硬.json"
     },
