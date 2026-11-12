@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-12T04:56:33.240206+00:00",
+  "generated_at_utc": "2026-11-12T14:17:03.054630+00:00",
   "vod": [
     {
       "name": "X4菠菜园",
@@ -52,11 +52,17 @@
     {
       "name": "X4少儿频道",
       "url": "https://0.12yue.de5.net/5/tv少儿.json",
-      "used": "original",
-      "ok": true
+      "ok": false,
+      "errors": [
+        "https://0.12yue.de5.net/5/tv少儿.json: Expecting value: line 1 column 1 (char 0)",
+        "https://0.wudaozhe.net/tvbox/X4少儿频道.json: Expecting value: line 1 column 1 (char 0)",
+        "https://0.12yue.de5.net/tvbox/X4少儿频道.json: Expecting value: line 1 column 1 (char 0)",
+        "https://0.cdz.qzz.io/tvbox/X4少儿频道.json: Expecting value: line 1 column 1 (char 0)",
+        "https://0.wdzb.eu.cc/tvbox/X4少儿频道.json: Expecting value: line 1 column 1 (char 0)"
+      ]
     }
   ],
-  "vod_ok_count": 9,
+  "vod_ok_count": 8,
   "lives": {
     "aggregation_url": "https://0.wudaozhe.net/tvbox/%E6%B5%B7%E9%87%8F%E7%9B%B4%E6%92%AD%E8%81%9A%E5%90%88%E6%8E%A5%E5%8F%A3.json",
     "chosen_url": "https://0.wudaozhe.net/tvbox/%E6%B5%B7%E9%87%8F%E7%9B%B4%E6%92%AD%E8%81%9A%E5%90%88%E6%8E%A5%E5%8F%A3.json",
