@@ -1,11 +1,18 @@
 {
-  "generated_at_utc": "2026-11-13T04:09:20.048464+00:00",
+  "generated_at_utc": "2026-11-13T13:39:32.374017+00:00",
   "vod": [
     {
       "name": "X4菠菜园",
       "url": "https://0.12yue.de5.net/5/x4.json",
-      "used": "original",
-      "ok": true
+      "ok": false,
+      "errors": [
+        "https://0.12yue.de5.net/5/x4.json: Expecting value: line 1 column 1 (char 0)",
+        "https://0.wudaozhe.net/5/x4.json: Expecting value: line 1 column 1 (char 0)",
+        "https://0.wudaozhe.net/tvbox/X4菠菜园.json: Expecting value: line 1 column 1 (char 0)",
+        "https://0.12yue.de5.net/tvbox/X4菠菜园.json: Expecting value: line 1 column 1 (char 0)",
+        "https://0.cdz.qzz.io/tvbox/X4菠菜园.json: Expecting value: line 1 column 1 (char 0)",
+        "https://0.wdzb.eu.cc/tvbox/X4菠菜园.json: Expecting value: line 1 column 1 (char 0)"
+      ]
     },
     {
       "name": "饭太硬",
@@ -40,8 +47,14 @@
     {
       "name": "X4更新专用接口",
       "url": "https://0.12yue.de5.net/0/666",
-      "used": "original",
-      "ok": true
+      "ok": false,
+      "errors": [
+        "https://0.12yue.de5.net/0/666: Expecting value: line 1 column 1 (char 0)",
+        "https://0.wudaozhe.net/tvbox/X4更新专用接口.json: Expecting value: line 1 column 1 (char 0)",
+        "https://0.12yue.de5.net/tvbox/X4更新专用接口.json: Expecting value: line 1 column 1 (char 0)",
+        "https://0.cdz.qzz.io/tvbox/X4更新专用接口.json: Expecting value: line 1 column 1 (char 0)",
+        "https://0.wdzb.eu.cc/tvbox/X4更新专用接口.json: Expecting value: line 1 column 1 (char 0)"
+      ]
     },
     {
       "name": "X4菠菜pro",
@@ -51,18 +64,12 @@
     },
     {
       "name": "X4少儿频道",
-      "url": "https://0.12yue.de5.net/5/tv少儿.json",
-      "ok": false,
-      "errors": [
-        "https://0.12yue.de5.net/5/tv少儿.json: Expecting value: line 1 column 1 (char 0)",
-        "https://0.wudaozhe.net/tvbox/X4少儿频道.json: Expecting value: line 1 column 1 (char 0)",
-        "https://0.12yue.de5.net/tvbox/X4少儿频道.json: Expecting value: line 1 column 1 (char 0)",
-        "https://0.cdz.qzz.io/tvbox/X4少儿频道.json: Expecting value: line 1 column 1 (char 0)",
-        "https://0.wdzb.eu.cc/tvbox/X4少儿频道.json: Expecting value: line 1 column 1 (char 0)"
-      ]
+      "url": "https://0.wudaozhe.net/tvbox/X4少儿频道.json",
+      "used": "backup1",
+      "ok": true
     }
   ],
-  "vod_ok_count": 8,
+  "vod_ok_count": 7,
   "lives": {
     "aggregation_url": "https://0.wudaozhe.net/tvbox/%E6%B5%B7%E9%87%8F%E7%9B%B4%E6%92%AD%E8%81%9A%E5%90%88%E6%8E%A5%E5%8F%A3.json",
     "chosen_url": "https://0.wudaozhe.net/tvbox/%E6%B5%B7%E9%87%8F%E7%9B%B4%E6%92%AD%E8%81%9A%E5%90%88%E6%8E%A5%E5%8F%A3.json",
